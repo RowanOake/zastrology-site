@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zastrology | A Psychological Star Chart</title>
+
+    <meta
+        name="description"
+        content="Discover the constellation directly above your birth through astronomy, mythology, and psychological archetypes."
+    >
+
+    <!-- Discord, Facebook, Bluesky, and other social previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zastrology">
+    <meta
+        property="og:description"
+        content="Discover the constellation directly above your birth. Reveal your conscious Zenith and hidden Nadir archetypes."
+    >
+    <meta property="og:url" content="https://zastrology.app">
+    <meta
+        property="og:image"
+        content="https://zastrology.app/images/social-preview.png"
+    >
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter/X preview -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zastrology">
+    <meta
+        name="twitter:description"
+        content="Discover the constellation directly above your birth through astronomy, mythology, and psychological archetypes."
+    >
+    <meta
+        name="twitter:image"
+        content="https://zastrology.app/images/social-preview.png"
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    rgba(255, 255, 255, 0.07),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(255, 255, 255, 0.04),
+                    transparent 22%
+                ),
+                #050505;
+
+            color: #f4f1ea;
+            text-align: center;
+        }
+
+        .landing-page {
+            width: min(760px, 100%);
+            padding: clamp(2rem, 7vw, 4.5rem) clamp(1.2rem, 6vw, 3rem);
+
+            border: 1px solid #2a2a2a;
+
+            background:
+                linear-gradient(
+                    rgba(5, 5, 5, 0.82),
+                    rgba(5, 5, 5, 0.92)
+                );
+
+            box-shadow:
+                0 0 60px rgba(255, 255, 255, 0.035),
+                inset 0 0 40px rgba(255, 255, 255, 0.018);
+        }
+
+        .kicker {
+            margin-bottom: 1.4rem;
+
+            color: #a8a096;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.76rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0 0 1.5rem;
+
+            color: #f4f1ea;
+
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(2.1rem, 9vw, 4.4rem);
+            font-weight: 400;
+            letter-spacing: 0.09em;
+            line-height: 1.15;
+            text-transform: uppercase;
+        }
+
+        .intro {
+            max-width: 650px;
+            margin: 0 auto;
+
+            color: #e8e1d6;
+
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(1.05rem, 3.5vw, 1.35rem);
+            line-height: 1.7;
+        }
+
+        .subtext {
+            max-width: 570px;
+            margin: 1.5rem auto 0;
+
+            color: #a8a096;
+
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1rem;
+            line-height: 1.65;
+        }
+
+        .launch-button {
+            display: inline-block;
+            margin-top: 2.4rem;
+            padding: 0.9rem 1.7rem;
+
+            border: 1px solid #d7d0c4;
+
+            color: #f4f1ea;
+            background: transparent;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.78rem;
+            letter-spacing: 0.16em;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            transition:
+                background-color 160ms ease,
+                color 160ms ease,
+                transform 160ms ease;
+        }
+
+        .launch-button:hover,
+        .launch-button:focus-visible {
+            color: #050505;
+            background-color: #f4f1ea;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 2.5rem;
+
+            color: #77716a;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+        }
+
+        @media (max-width: 520px) {
+            body {
+                padding: 0;
+            }
+
+            .landing-page {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-left: 0;
+                border-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="landing-page">
+        <div class="kicker">
+            A Psychological Star Chart
+        </div>
+
+        <h1>
+            ✦ Zastrology ✦
+        </h1>
+
+        <p class="intro">
+            Discover the constellation directly above your birth.
+            Not your Sun sign. Not your Moon sign.
+            Your personal constellation at the moment you arrived.
+        </p>
+
+        <p class="subtext">
+            Zenith reveals your conscious calling.
+            Nadir reveals your hidden root.
+        </p>
+
+        <a
+            class="launch-button"
+            href="https://zastrology.streamlit.app"
+        >
+            Discover My Destiny
+        </a>
+
+        <div class="footer">
+            © 2026 Rowan Love. All rights reserved.
+        </div>
+    </main>
+</body>
+</html>
